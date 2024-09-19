@@ -1,7 +1,6 @@
 column_width = 88
-indent_width = 2
+indent_width = 4
 indent_type = "Tabs"
 call_parentheses = "None"
 collapse_simple_statement = "Always"
 quote_style = "AutoPreferDouble"
-
