@@ -20,7 +20,7 @@ M.setup = function(args)
 		vim.cmd "echohl WarningMsg | echo 'Your neovim version is lower than 0.8.3, some features may not work correctly!' | echohl None"
 	end
 
-	vim.g.colors_name = "afodarcula"
+	vim.g.colors_name = "darculafo"
 	vim.o.termguicolors = true
 	M.configure_highlights()
 end
@@ -133,10 +133,26 @@ M.configure_highlights = function()
 	hl(0, "BufferDefaultCurrentTarget", { bold = true, ctermfg = 9, fg = "#ff0000" })
 	hl(0, "BufferDefaultCurrentWARN", { ctermfg = 224, fg = "#f6c87b" })
 	hl(0, "BufferDefaultInactive", { bg = "#383838", ctermfg = 102, fg = "#4c4c4c" })
-	hl(0, "BufferDefaultInactiveERROR", { bg = "#383838", ctermfg = 15, fg = "#f43753" })
-	hl(0, "BufferDefaultInactiveHINT", { bg = "#383838", ctermfg = 168, fg = "#d5508f" })
-	hl(0, "BufferDefaultInactiveINFO", { bg = "#383838", ctermfg = 217, fg = "#ffb7b7" })
-	hl(0, "BufferDefaultInactiveIndex", { bg = "#383838", ctermfg = 12, fg = "#4c4c4c" })
+	hl(
+		0,
+		"BufferDefaultInactiveERROR",
+		{ bg = "#383838", ctermfg = 15, fg = "#f43753" }
+	)
+	hl(
+		0,
+		"BufferDefaultInactiveHINT",
+		{ bg = "#383838", ctermfg = 168, fg = "#d5508f" }
+	)
+	hl(
+		0,
+		"BufferDefaultInactiveINFO",
+		{ bg = "#383838", ctermfg = 217, fg = "#ffb7b7" }
+	)
+	hl(
+		0,
+		"BufferDefaultInactiveIndex",
+		{ bg = "#383838", ctermfg = 12, fg = "#4c4c4c" }
+	)
 	hl(0, "BufferDefaultInactiveMod", { bg = "#383838", ctermfg = 224, fg = "#f43753" })
 	hl(0, "BufferDefaultInactiveSign", { bg = "#383838", ctermfg = 12, fg = "#4c4c4c" })
 	hl(
@@ -144,7 +160,11 @@ M.configure_highlights = function()
 		"BufferDefaultInactiveTarget",
 		{ bg = "#383838", bold = true, ctermfg = 9, fg = "#ff0000" }
 	)
-	hl(0, "BufferDefaultInactiveWARN", { bg = "#383838", ctermfg = 224, fg = "#f43753" })
+	hl(
+		0,
+		"BufferDefaultInactiveWARN",
+		{ bg = "#383838", ctermfg = 224, fg = "#f43753" }
+	)
 	hl(0, "BufferDefaultTabpageFill", { bg = "#383838", ctermfg = 102, fg = "#4c4c4c" })
 	hl(
 		0,
@@ -155,7 +175,11 @@ M.configure_highlights = function()
 	hl(0, "BufferDefaultVisibleERROR", { bg = "#383838", ctermfg = 15, fg = "#f43753" })
 	hl(0, "BufferDefaultVisibleHINT", { bg = "#383838", ctermfg = 168, fg = "#d5508f" })
 	hl(0, "BufferDefaultVisibleINFO", { bg = "#383838", ctermfg = 217, fg = "#ffb7b7" })
-	hl(0, "BufferDefaultVisibleIndex", { bg = "#383838", ctermfg = 255, fg = "#c9d05c" })
+	hl(
+		0,
+		"BufferDefaultVisibleIndex",
+		{ bg = "#383838", ctermfg = 255, fg = "#c9d05c" }
+	)
 	hl(0, "BufferDefaultVisibleMod", { bg = "#383838", ctermfg = 224, fg = "#f43753" })
 	hl(0, "BufferDefaultVisibleSign", { bg = "#383838", ctermfg = 255, fg = "#c9d05c" })
 	hl(
@@ -354,7 +378,11 @@ M.configure_highlights = function()
 	hl(0, "IndentBlanklineChar", { fg = "#484848", nocombine = true })
 	hl(0, "IndentBlanklineContextChar", { fg = "#b8b8b8", nocombine = true })
 	hl(0, "IndentBlanklineContextStart", { sp = "#ffc24b", underline = true })
-	hl(0, "IndentBlanklineSpaceChar", { ctermfg = 12, fg = "#4c4c4c", nocombine = true })
+	hl(
+		0,
+		"IndentBlanklineSpaceChar",
+		{ ctermfg = 12, fg = "#4c4c4c", nocombine = true }
+	)
 	hl(
 		0,
 		"IndentBlanklineSpaceCharBlankline",
@@ -707,21 +735,41 @@ M.configure_highlights = function()
 	hl(0, "lualine_x_2_replace", { bg = "#98be65", fg = "#ff9e64" })
 	hl(0, "lualine_x_2_terminal", { bg = "#98be65", fg = "#ff9e64" })
 	hl(0, "lualine_x_2_visual", { bg = "#98be65", fg = "#ff9e64" })
-	hl(0, "lualine_x_filetype_DevIconDefault_command", { bg = "#98be65", fg = "#6d8086" })
+	hl(
+		0,
+		"lualine_x_filetype_DevIconDefault_command",
+		{ bg = "#98be65", fg = "#6d8086" }
+	)
 	hl(
 		0,
 		"lualine_x_filetype_DevIconDefault_inactive",
 		{ bg = "#abb2bf", fg = "#6d8086" }
 	)
-	hl(0, "lualine_x_filetype_DevIconDefault_insert", { bg = "#98be65", fg = "#6d8086" })
-	hl(0, "lualine_x_filetype_DevIconDefault_normal", { bg = "#98be65", fg = "#6d8086" })
-	hl(0, "lualine_x_filetype_DevIconDefault_replace", { bg = "#98be65", fg = "#6d8086" })
+	hl(
+		0,
+		"lualine_x_filetype_DevIconDefault_insert",
+		{ bg = "#98be65", fg = "#6d8086" }
+	)
+	hl(
+		0,
+		"lualine_x_filetype_DevIconDefault_normal",
+		{ bg = "#98be65", fg = "#6d8086" }
+	)
+	hl(
+		0,
+		"lualine_x_filetype_DevIconDefault_replace",
+		{ bg = "#98be65", fg = "#6d8086" }
+	)
 	hl(
 		0,
 		"lualine_x_filetype_DevIconDefault_terminal",
 		{ bg = "#98be65", fg = "#6d8086" }
 	)
-	hl(0, "lualine_x_filetype_DevIconDefault_visual", { bg = "#98be65", fg = "#6d8086" })
+	hl(
+		0,
+		"lualine_x_filetype_DevIconDefault_visual",
+		{ bg = "#98be65", fg = "#6d8086" }
+	)
 	hl(0, "rainbowcol1", { fg = "#e8e8e8" })
 	hl(0, "rainbowcol2", { fg = "#dc9656" })
 	hl(0, "rainbowcol3", { fg = "#ffc24b" })
